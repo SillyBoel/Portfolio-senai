@@ -1,0 +1,293 @@
+* {
+    margin: 0;
+    padding: 0;
+    caret-color: transparent;
+    
+}
+
+main {
+    background: #818180;
+}
+
+section {
+    padding-top: 100px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 4rem;
+    text-align: center;
+    max-width: 1000px;
+    margin: auto;
+}
+
+@media(max-width: 759px){
+    .logo {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .menu {
+        flex-direction: column;
+    }
+
+    .section {
+        padding: 2rem 1rem;
+    }
+
+    header {
+        padding: 1rem;
+    }
+
+    .logo{
+        width: 100px;
+    }
+
+    .contats {
+        flex-direction: column;
+    }
+}
+
+/* textos */
+.titulo {
+    font-family: Georgia;
+    font-style: italic;
+}
+
+.texto {
+    font-family: Arial;
+    font-size: larger;
+}
+
+.timedata {
+    font-family: Courier;
+    font-size: larger;
+    font-style: italic;
+}
+
+.botao {
+    font-family: 'Franklin Gothic Medium';
+}
+
+/* menu */
+header {
+    background-color: #bbb6bb;
+    position: sticky;
+    top: 0;
+    padding: 2.5px 2rem;
+    border-bottom: 1px solid black;
+    z-index: 10;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 75px;
+    height: 75px;
+    border: 1px solid black;
+    padding: 0px;
+    margin: 5px;
+    border-radius: 2rem;
+}
+
+.menu {
+    list-style: square;
+    display: flex;
+    font-size: large;
+    gap: 1.5rem;
+}
+
+.menu a {
+    color: black;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color: white;
+}
+
+/* sobre */
+#sobre {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom:  2rem;
+    align-items: center;
+}
+
+.texto1{
+    text-align: left;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background: #bbb6bb;
+    padding-bottom: 2rem;
+    margin: 1rem;
+    border-radius: 6px;
+    border: 1px solid black;
+    height: 350px;
+}
+
+.texto1 h2 {
+    padding: 1rem 0;
+}
+
+.perfil-sobre {
+    width: 300px;
+    height: 300px;
+    border-radius: 6px;
+    border: 1px solid black;
+}
+
+/* skills e formações*/
+.skill-form{
+    display: flex;
+}
+
+.skills {
+    text-align: center;
+}
+
+#skills {
+    max-width: 50%;
+    height: 400px;
+}
+
+#formacao {
+    max-width: 50%;
+    height: 400px;
+}
+
+
+.skillscard {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 1rem;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    border: 1px solid #000000;
+    border-radius: 6px;
+    padding: 1rem;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    background-color: #bbb6bb;
+}
+
+.section h2 {
+    padding: 1rem 0;
+}
+
+.timeline {
+    position: relative;
+}
+
+.timeitem {
+    padding: 10px 50px;
+    position: relative;
+    width: 40%;
+}
+
+.timeinfo {
+    padding: 20px 30px;
+    background: #bbb6bb;
+    position: relative;
+    border: 1px solid #000000;
+    border-radius: 6px;
+
+}
+
+.lef {
+    left: 0;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    background: black;
+    top: 0;
+    left: 50%;
+    margin-left: 3px;
+    z-index: 2;
+}
+
+/* projetos */
+.projs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.proj {
+    background: #bbb6bb;
+    border-radius: 12px;
+    padding: 1rem;
+    border: 1px solid #bbb6bb;
+}
+
+.proj button {
+    margin: 1rem;
+    padding: 0.5rem;
+    background: #adadad;
+    border: 1px solid black;
+    border-radius: 6px;
+}
+
+.proj button:hover {
+    transform: scale(1.03);
+    background: white;
+}
+
+.proj img {
+    width: 100%;
+    max-height: 254px;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+/* contatos */
+footer {
+    padding-top: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 4rem;
+    text-align: center;
+    margin: auto;
+    background-color: #bbb6bb;
+}
+
+.contats {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 26px;
+    padding-top: 1rem;
+}
+
+.contats a {
+    color: black;
+    text-decoration: none;
+}
+
+.contats a:hover {
+    color: white;
+}
+
+.icon-cont {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    border: 2px solid black;
+    background: white;
+}
